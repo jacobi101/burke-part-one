@@ -1,95 +1,141 @@
+/* All color classes */
 body {
     background-color: #e8ded9;
+    background-image: "code.png";
 }
-.learn {
+.link_hover_color:hover {
+    color: #61c386;
+}
+.button_color {
+    background-color: #61c386;
+}
+.emphasis_color {
+    color: #61c386;
+}
+.link_color {
+    color: #5b8c6f;
+}
+.button_hover_color:hover {
+    background-color: #f7e966;
+    padding: 10px;
+    border-radius: 12px;
+
+}
+
+/*All font classes */
+.heavy_font_weight {
+    font-weight: 600;
+}
+.medium_font_weight {
     font-weight: 400;
+}
+.light_font_weight {
+    font-weight: 300;
+}
+.font_fam {
     font-family: 'Roboto';
+}
+
+/* misc classes for one off uses for each element */
+.learn_misc {
     font-size: 25px;
     padding: 10px;
 }
-.question {
-    font-weight: 600;
-    font-family: 'Roboto';
+.question_misc {
     font-size: 40px;
     margin-bottom: 15px;
 }
-.options {
-    font-weight: 300;
-    font-family: 'Roboto';
-    color: #5b8c6f;
+.option_links_misc {
     font-size: 15px;
     margin-left: -30px;
-}
-.links {
     display: flex;
     flex-direction: column;
-    width: 200px;
 }
-.green {
-    color: #61c386
+.list_type {
+    list-style-type:none;
 }
-.box {
-    font-weight: 300;
-    font-family: Roboto;
+.contact_box_misc {
     color: #ffffff;
-    background-color: #61c386;
-    width: 90vw;
+    width: 100vw;
     text-align: center;
     padding: 10px;
     border-radius: 12px;
 }
-.spacing{
-    font-weight: 300;
-    font-family: 'Roboto';
-    color: #5b8c6f;
+.new_career_misc{
     font-size: 15px;
     margin-bottom: 20px;
 }
-.link_color:hover {
-    color: #f7e966;
-}
-.box_link:hover { 
-    background-color: #f7e966;
-    color: #61c386;
+.learn_more_box_misc {
+    color: #ffffff;
+    width: 100vw;
+    text-align: center;
     padding: 10px;
     border-radius: 12px;
 }
+.image {
+    display: none;
+}
+
+
+
+
 
 /* Desktop Styles */
 @media only screen and (min-width: 768px) {
-    .learn {
-        font-weight: 400;
-        font-family: Roboto;
+    
+    /* Only differences between mobile and desktop layout should be in here */
+
+    .learn_misc {
+        font-size: 25px;
+        padding: 10px;
+        position: relative;
+        left: 30px;
     }
-    .question {
-        font-weight: 600;
-        font-family: 'Roboto';
+    
+    .contact_box_misc {
+        width: auto;
+        position: fixed;
+        right: 100px;
+        top: 15px;
     }
-    .options {
-        font-weight: 300;
-        font-family: 'Roboto';
-        color: #5b8c6f
-    }
-    body {
-        background-color: #e8ded9;
-    }
-    .parent-container-column {
-        display: flex;
+    .option_links_misc {
+        font-size: 15px;
+        margin-left: -30px;
         flex-direction: row;
-        position: static;
-        right: 100vw;
+        position: fixed;
+        right: 200px;
+        top: 10px;
     }
-    .box {
-        font-weight: 300;
-        font-family: Roboto;
+    .question_misc {
+        font-size: 40px;
+        margin-bottom: 15px;
+        position: relative;
+        top: 200px;
+        left: 40px;
+    }
+    .new_career_misc{
+        font-size: 15px;
+        margin-bottom: 20px;
+        position: relative;
+        top: 200px;
+        left: 40px
+    }
+    .learn_more_box_misc {
         color: #ffffff;
-        background-color: #61c386;
-        width: 200px;
+        width: auto;
         text-align: center;
         padding: 10px;
         border-radius: 12px;
-        font-size: 30px;
-        position: absolute;
-        
+        position: fixed;
+        top: 350px;
+        left: 45px;
     }
+    .image {
+        position: fixed;
+        display: flex;
+        right: 100px;
+        top: 10px;
+    }
+    
+
 }
